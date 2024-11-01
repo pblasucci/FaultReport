@@ -1,5 +1,8 @@
 # Default ignored files
 /shelf/
+/encodings.xml
+/misc.xml
+/vcs.xml
 /workspace.xml
 # Rider ignored files
 /modules.xml
