@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Errata", "Errata", "{F75408
 		CHANGELOG.md = CHANGELOG.md
 		README.md = README.md
 		LICENSE.txt = LICENSE.txt
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
 Global
