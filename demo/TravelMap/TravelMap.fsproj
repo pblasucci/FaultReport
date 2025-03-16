@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <RootNamespace>Demo.TravelMap</RootNamespace>
+    <WarnOn>
+      $(WarnOn);  <!-- include warning set elsewhere -->
+      1182;       <!-- unused bindings -->
+      3218;       <!-- signature / implementation argument mismatch -->
+      3366;       <!-- OCaml-style indexer notation -->
+      3390;       <!-- invalid XMLDoc comments -->
+      <!--
+      ⮟⮟⮟ These are useful for advanced debugging ⮟⮟⮟
+      3180;   ... implicit heap allocation: mutable promoted to ref cell
+      3388;   ... additional implicit upcasts (subsumption)
+      3389;   ... implicit numeric widening
+      3395;   ... method argument implicit conversion
+      -->
+    </WarnOn>
+    <NoWarn>
+      $(NoWarn);  <!-- include suppressions set elsewhere -->
+      0052;       <!-- implicit copies of structs -->
+    </NoWarn>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Common.fs"/>
+    <Compile Include="Support.fs"/>
+    <Compile Include="Visit.fs"/>
+    <Compile Include="Store.fs"/>
+    <Compile Include="Web.fs"/>
+    <Compile Include="Program.fs"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Atlas\Atlas.fsproj"/>
+    <ProjectReference Include="..\ForEx\ForEx.fsproj"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66"/>
+    <PackageReference Include="FsToolkit.ErrorHandling" Version="5.0.0-beta007"/>
+    <PackageReference Include="NodaTime" Version="3.2.1"/>
+    <PackageReference Include="pblasucci.ananoid" Version="1.1.0"/>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119"/>
+    <PackageReference Update="FSharp.Core" Version="9.0.201" />
+  </ItemGroup>
+
+</Project>

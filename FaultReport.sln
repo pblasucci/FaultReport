@@ -8,11 +8,48 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Errata", "Errata", "{F75408
 		LICENSE.txt = LICENSE.txt
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		global.json = global.json
 	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "faultreport", "faultreport\faultreport.fsproj", "{7BB4D36E-2213-41EB-A691-978922386288}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{F01F188A-C43D-4ED5-ACBD-E8FF4AD23F62}"
+	ProjectSection(SolutionItems) = preProject
+		demo\README.md = demo\README.md
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TravelMap", "demo\TravelMap\TravelMap.fsproj", "{6725658C-2E96-4889-B023-D5A201809A1E}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ForEx", "demo\ForEx\ForEx.fsproj", "{6EE54D48-BC80-498B-AB14-AE3CF276EFAC}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Atlas", "demo\Atlas\Atlas.fsproj", "{896A8536-AF45-470B-9E59-387C49533896}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BB4D36E-2213-41EB-A691-978922386288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB4D36E-2213-41EB-A691-978922386288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB4D36E-2213-41EB-A691-978922386288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB4D36E-2213-41EB-A691-978922386288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6725658C-2E96-4889-B023-D5A201809A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6725658C-2E96-4889-B023-D5A201809A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6725658C-2E96-4889-B023-D5A201809A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6725658C-2E96-4889-B023-D5A201809A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE54D48-BC80-498B-AB14-AE3CF276EFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE54D48-BC80-498B-AB14-AE3CF276EFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE54D48-BC80-498B-AB14-AE3CF276EFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE54D48-BC80-498B-AB14-AE3CF276EFAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896A8536-AF45-470B-9E59-387C49533896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896A8536-AF45-470B-9E59-387C49533896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896A8536-AF45-470B-9E59-387C49533896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896A8536-AF45-470B-9E59-387C49533896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6725658C-2E96-4889-B023-D5A201809A1E} = {F01F188A-C43D-4ED5-ACBD-E8FF4AD23F62}
+		{6EE54D48-BC80-498B-AB14-AE3CF276EFAC} = {F01F188A-C43D-4ED5-ACBD-E8FF4AD23F62}
+		{896A8536-AF45-470B-9E59-387C49533896} = {F01F188A-C43D-4ED5-ACBD-E8FF4AD23F62}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,7 @@
+query FindCountry($name: String!) {
+  countries(filter: { name: { regex: $name } }) {
+    code
+    name
+    currencies
+  }
+}

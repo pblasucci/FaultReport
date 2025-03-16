@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RootNamespace>Demo.Atlas</RootNamespace>
+        <IsPackable>false</IsPackable>
+        <RepositoryUrl />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Library.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="HotChocolate.Transport.Http" Version="15.0.3" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.3" />
+      <PackageReference Update="FSharp.Core" Version="9.0.201" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Countries.graphql" />
+      <Content Include="graphql.config.yml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\faultreport\faultreport.fsproj" />
+    </ItemGroup>
+
+</Project>

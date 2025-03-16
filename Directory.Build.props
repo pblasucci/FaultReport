@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
     <LangVersion>preview</LangVersion>
     <WarningLevel>5</WarningLevel>
     <WarnOn>
@@ -20,9 +21,10 @@
     </WarnOn>
     <NoWarn>
       0052;       <!-- implicit copies of structs -->
+      3511;       <!-- dynamic (rather than static) task expressions -->
       $(NoWarn);  <!-- include suppressions set elsewhere -->
     </NoWarn>
-    <IsPackable>false</IsPackable>
+    <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <RootNamespace>MulberryLabs.FaultReport</RootNamespace>
     <Company>MulberryLabs SL</Company>

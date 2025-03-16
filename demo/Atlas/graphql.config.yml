@@ -1,0 +1,2 @@
+schema: https://countries.trevorblades.com/
+documents: '**/*.graphql'

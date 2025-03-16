@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RootNamespace>Demo.ForEx</RootNamespace>
+        <IsPackable>false</IsPackable>
+        <RepositoryUrl />
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\faultreport\faultreport.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Data" Version="6.6.0" />
+      <PackageReference Update="FSharp.Core" Version="9.0.201" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="Library.fs" />
+    </ItemGroup>
+
+</Project>
